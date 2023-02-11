@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+.topBarWrap {
+  min-width: 1226px;
+  background-color: #333333;
+  color: #b0b0b0;
+  font-size: 12px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial,
+    "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+}
+
+.siteNavigationWrap {
+  width: 1226px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .siteNavigationWrap .include > div {
+  height: 40px;
+} */
+
+.siteNavigationWrap .include > div:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.siteNavigationWrap .include {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.siteNavigationWrap .include > span {
+  color: #424242;
+}
+
+.siteNavigationWrap .include .operate {
+  display: flex;
+  gap: 6px;
+  color: #bfa;
+}
+
+.operate > div:hover {
+  color: #fff;
+}
+
+.shoppingCar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 120px;
+  background-color: #424242;
+}
