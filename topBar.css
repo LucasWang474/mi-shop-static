@@ -1,0 +1,47 @@
+.topBarWrap {
+  /* 定位相关的 */
+  /* 显示相关的 */
+  display: flex;
+  justify-content: center;
+  /* 盒子尺寸颜色边框 */
+  height: 40px;
+  background-color: var(--dark-gray);
+  /* 文字相关 */
+  color: var(--font-color);
+  font-size: 12px;
+}
+
+.siteNavigationWrap {
+  display: flex;
+  justify-content: space-between;
+  width: var(--edition-width);
+}
+
+.include > a {
+  color: var(--font-color);
+  line-height: 40px;
+}
+
+.siteNavigationWrap .include a:hover {
+  color: var(--white);
+  cursor: pointer;
+}
+
+.siteNavigationWrap .include {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.siteNavigationWrap .include > span {
+  color: var(--gray);
+}
+
+.shoppingCar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 120px;
+  background-color: var(--gray);
+}
