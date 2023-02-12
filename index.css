@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+html {
+  --edition-width: 1226px;
+  --dark-gray: #424242;
+  --font-color: #b0b0b0;
+}
+
+body {
+  min-width: var(--edition-width);
+}
+
+.topBarWrap {
+  /* 定位相关的 */
+  /* 显示相关的 */
+  display: flex;
+  justify-content: center;
+  /* 盒子尺寸颜色边框 */
+  height: 40px;
+  background-color: #333333;
+  /* 文字相关 */
+  color: #b0b0b0;
+  font-size: 12px;
+  font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial,
+    "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+}
+
+.siteNavigationWrap {
+  display: flex;
+  justify-content: space-between;
+  width: var(--edition-width);
+}
+
+.include > a {
+  text-decoration: none;
+  color: var(--font-color);
+  line-height: 40px;
+}
+
+.siteNavigationWrap .include a:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.siteNavigationWrap .include {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.siteNavigationWrap .include > span {
+  color: var(--dark-gray);
+}
+
+.shoppingCar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 120px;
+  background-color: var(--dark-gray);
+}
