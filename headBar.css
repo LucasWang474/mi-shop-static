@@ -12,6 +12,10 @@
   width: var(--edition-width);
 }
 
+.editionHeart a {
+  display: flex;
+}
+
 .logo {
   height: 56px;
   width: 56px;
@@ -22,7 +26,7 @@
   gap: 20px;
 }
 
-.headBar a {
+.shopNavigation a {
   line-height: 88px;
   font-size: 16px;
   color: var(--dark-gray);
@@ -30,36 +34,46 @@
 
 .shopNavigation a:hover {
   color: var(--mi-orange);
+  cursor: pointer;
 }
 
-.serch {
+.searchFormWrap {
   display: flex;
   align-content: center;
   height: 50px;
   background-color: var(--white);
 }
 
-.mSerch {
+.searchForm {
   width: 245px;
   display: flex;
+  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   border: 1px solid var(--headBar-border);
 }
 
-.dataFromUsers {
-  width: 230px;
+.searchInput {
+  position: absolute;
+  width: 220px;
   outline: none;
   border: none;
+  font-size: 14px;
 }
 
-.serch button {
+.searchFormWrap button {
   width: 50px;
   background-color: var(--white);
   border: 1px solid var(--headBar-border);
 }
 
-.mSerch:has(.dataFromUsers:focus),
-.mSerch:has(.dataFromUsers:focus) ~ button {
+.searchFormWrap button:hover {
+  cursor: pointer;
+  background-color: var(--mi-orange);
+  color: var(--white);
+}
+
+.searchForm:has(.searchInput:focus),
+.searchForm:has(.searchInput:focus) ~ button {
   border: 1px solid var(--mi-orange);
 }
