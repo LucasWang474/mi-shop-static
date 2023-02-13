@@ -1,0 +1,10 @@
+.headBarItem {
+  display: flex;
+  justify-content: center;
+}
+
+.commodity {
+  height: 204px;
+  width: 201px;
+  background-color: #bfa;
+}
