@@ -45,26 +45,32 @@
 }
 
 .searchForm {
-  width: 245px;
+  width: 295px;
+  /* margin-top: 19px; */
   display: flex;
-  /* flex-direction: column; */
-  justify-content: center;
-  align-items: center;
-  border: 1px solid var(--headBar-border);
+  flex-wrap: wrap;
+  align-content: flex-start;
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 
 .searchInput {
-  position: absolute;
-  width: 220px;
+  width: 245px;
+  height: 50px;
+  padding: 0px 10px;
   outline: none;
   border: none;
   font-size: 14px;
+  border: 1px solid var(--headBar-border);
 }
 
 .searchFormWrap button {
   width: 50px;
+  border-left: none;
   background-color: var(--white);
-  border: 1px solid var(--headBar-border);
+  border-bottom: 1px solid var(--headBar-border);
+  border-right: 1px solid var(--headBar-border);
+  border-top: 1px solid var(--headBar-border);
 }
 
 .searchFormWrap button:hover {
@@ -73,7 +79,55 @@
   color: var(--white);
 }
 
-.searchForm:has(.searchInput:focus),
-.searchForm:has(.searchInput:focus) ~ button {
+.searchList {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* padding: 0px 16px 0px; */
+  width: 245px;
+  border-left: 1px solid var(--headBar-border);
+  border-right: 1px solid var(--headBar-border);
+  border-bottom: 1px solid var(--headBar-border);
+  visibility: hidden;
+}
+
+.searchList div {
+  height: 30px;
+  padding: 0px 16px 0px;
+}
+
+.searchList a {
+  line-height: 30px;
+  color: var(--gray);
+  font-size: 12px;
+}
+.searchInput:focus {
   border: 1px solid var(--mi-orange);
+}
+
+.searchInput:focus + button {
+  border-bottom: 1px solid var(--mi-orange);
+  border-right: 1px solid var(--mi-orange);
+  border-top: 1px solid var(--mi-orange);
+}
+
+.searchInput:focus + button + div {
+  border-left: 1px solid var(--mi-orange);
+  border-right: 1px solid var(--mi-orange);
+  border-bottom: 1px solid var(--mi-orange);
+}
+
+.searchInput:focus:valid + button + div {
+  visibility: visible;
+}
+
+.searchList > a:hover {
+  cursor: pointer;
+}
+
+.searchList > div:has(.searchResult:hover) {
+  background-color: #fafafa;
+}
+
+#searchIcon {
+  height: 20px;
 }
