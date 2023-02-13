@@ -1,0 +1,79 @@
+.headBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.editionHeart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: var(--edition-width);
+}
+
+.editionHeart a {
+  display: flex;
+}
+
+.logo {
+  height: 56px;
+  width: 56px;
+}
+
+.shopNavigation {
+  display: flex;
+  gap: 20px;
+}
+
+.shopNavigation a {
+  line-height: 88px;
+  font-size: 16px;
+  color: var(--dark-gray);
+}
+
+.shopNavigation a:hover {
+  color: var(--mi-orange);
+  cursor: pointer;
+}
+
+.searchFormWrap {
+  display: flex;
+  align-content: center;
+  height: 50px;
+  background-color: var(--white);
+}
+
+.searchForm {
+  width: 245px;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--headBar-border);
+}
+
+.searchInput {
+  position: absolute;
+  width: 220px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+}
+
+.searchFormWrap button {
+  width: 50px;
+  background-color: var(--white);
+  border: 1px solid var(--headBar-border);
+}
+
+.searchFormWrap button:hover {
+  cursor: pointer;
+  background-color: var(--mi-orange);
+  color: var(--white);
+}
+
+.searchForm:has(.searchInput:focus),
+.searchForm:has(.searchInput:focus) ~ button {
+  border: 1px solid var(--mi-orange);
+}
